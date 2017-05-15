@@ -1,0 +1,12 @@
+angular.module("shopcarModule",[])
+.config(['$routeProvider',function($routeProvider){
+	$routeProvider
+	.when('/shopcar',{
+		templateUrl:'conpons/shopcar/shopcar.html',
+		controller:'shopcarcontrol',
+		css:'conpons/shopcar/shopcar.css'
+	})
+}])
+.controller("shopcarcontrol",['$scope',function($scope){
+	$scope.name="shopcar"
+}])

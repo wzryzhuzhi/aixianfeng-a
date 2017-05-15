@@ -1,0 +1,80 @@
+<div id="box1">
+	<div class="dingwei"></div>
+	<div class="head"><div class="headCenter"><p>武汉大学<i>▼</i><p></p></div><span>搜索</span></div>
+	<div class="banner">
+		<div class="swiper-container">
+   			<div class="swiper-wrapper">
+	       		<div class="swiper-slide" ng-repeat="item in arrSwiper">
+	        		<img src="{{item.activity.img}}"/>
+	       		</div>
+   			</div>
+		    <!-- 如果需要分页器 -->
+		    <div class="swiper-pagination"></div>
+		</div>	
+	</div>
+	<div class="banmenu">
+		<ul>
+			<li ng-repeat='item in arrBanmenu'>
+				<a href="">
+					<img src='{{item.activity.img}}'>
+					<p>{{item.activity.name}}</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="banmilks">
+		<ul>
+			<li ng-repeat='item in arrMilks'>
+				<img src="{{item.activity.img}}">
+			</li>
+		</ul>
+	</div>
+	<div class="home-business">
+		<ul>
+			<li ng-repeat="item in arrEasy1">
+				<a href="javascript:void(0)"><img src='{{item.chead_detail.img}}'></a>
+			</li>
+		</ul>
+		<ul>
+			<li ng-repeat="item in arrEasy2">
+				<a href="javascript:void(0)"><img src='{{item.cactivity_detail.img}}'></a>
+			</li>
+		</ul>
+		<ul>
+			<li ng-repeat="item in arrEasy3">
+				<a href="javascript:void(0)"><img src="{{item.cicons_detail.img}}"/><p>{{item.cicons_detail.name}}</p></a>
+			</li>
+		</ul>
+		<ul>
+			<li ng-repeat="item in arrEasy4">
+				<a href="javascript:void(0)"><img src='{{item.cscene_detail.img}}'></a>
+			</li>
+		</ul>
+	</div>
+	<div class="home_allshop">
+		<ul>
+			<li ng-repeat='item in arrAllshop'>
+				<p class="homep">
+					<i ng-style="{'background-color':'#{{item.category_detail.category_color}}'}"></i>
+					<span ng-style={'color':'#{{item.category_detail.category_color}}'}>{{item.category_detail.name}}</span>
+				</p>
+				<span>更多&nbsp;<i class="icon-angle-right"></i></span>
+				<img src='{{item.activity.img}}'>
+				<ul>
+					<li ng-repeat='it in item.category_detail.goods'>
+						<div>
+							<div class='homeLiImg'><img src='{{it.img}}'></div>
+							<div class='homeLimes'>
+								<p>{{it.name}}</p>
+								<p><span>精选</span>&nbsp;<span>{{it.pm_desc}}</span></p>
+								<p>{{it.specifics}}</p>
+								<p><span>￥{{it.partner_price}}</span>&nbsp;<span>￥{{it.market_price}}</span></p>
+							</div>
+							<b class='addshop'>+</b>
+						</div>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>

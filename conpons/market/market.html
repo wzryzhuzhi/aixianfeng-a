@@ -1,0 +1,43 @@
+<div id="box2">
+	<div class="dingwei"></div>
+	<div class="head"><div class="headCenter"><p>武汉大学<i>▼</i></p></div><span>搜索</span></div>
+	<div class="menuLeft">
+		<ul>
+			<li ng-repeat='(i,item) in arrLeft' ng-click="changeshow(item.id,i)"><i ng-show="isYellow"></i>{{item.name}}</li>
+		</ul>
+	</div>
+	<div class="menuRight">
+		<ul>
+			<li ng-repeat="(i,item) in arrRight | orderBy:volume | filter:even">
+				<img lazy-src='{{item.img}}'>
+				<div class='proLimes'>
+					<p>{{item.name}}</p>
+					<p>
+						<span>精选</span>&nbsp;<span>{{item.pm_desc}}</span>
+					</p>
+					<p>{{item.specifics}}</p>
+					<p><span>{{'￥'+item.partner_price}}</span>&nbsp;<span>{{'￥'+item.market_price}}</span></p>
+				</div>
+				<b class='addshop1' ng-click="suanJian(i)" ng-if="item.num>0">-</b><span class='shopping' ng-if="item.num>0">{{item.num}}</span><b class='addshop0' ng-click="suanJia(i)">+</b>
+			</li>
+		</ul>
+		<div class="menuSort">
+			<ul class="big">
+				<li ng-click="zhShow2()">全部分类</li>
+				<li ng-click="zhShow1()">综合排序</li>
+			</ul>
+		</div>
+		
+	</div>
+	<div class="back" ng-show=isShow>
+		<ul class="small" id="psort" ng-show=isShow1>
+			<li ng-click="screeneven()">综合排序</li>
+      		<li ng-click="screeneven('product_num')">销量最高</li>
+			<li ng-click="screeneven('partner_price-0')">价格最高</li>
+			<li ng-click="screeneven('-partner_price-0')">价格最低</li>
+		</ul>
+		<ul class="small" id="msort"  ng-show=isShow2>
+			<li ng-repeat="item in arrSort" ng-click="waresSort(item.name)">{{item.name}}</li>
+		</ul>
+	</div>
+</div>

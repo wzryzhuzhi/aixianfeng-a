@@ -1,0 +1,36 @@
+#box2{color:#6d6d6d;font-size: 1.2rem;}
+
+/*左边列表*/
+#box2>.menuLeft{position:fixed;top:4.6rem;width: 23.75%;height:100%;padding-bottom:4.7rem;background:#f8f8f8;z-index:10;}
+#box2>.menuLeft>ul{width:100%;height:100%;overflow-y:scroll;background:#e0e0e0;padding-bottom:4.6rem;}
+#box2>.menuLeft>ul>li{background:#f8f8f8;width:100%;height:4.2rem;position:relative;border-bottom:1px solid #e0e0e0;text-align:center;line-height:4.2rem;}
+#box2>.menuLeft>ul>li>i{position:absolute;left:0;top:0.4rem;background:#ffd600;height:3.4rem;width:6px;}
+/*闪送超市-右侧*/
+#box2>.menuRight{width:75%;height:93%;background:#fff;float: right;overflow:scroll;}
+#box2>.menuRight>ul{width:100%;padding-top:4.2rem;}
+#box2>.menuRight>ul>li{width:100%;height:9.1rem;padding:0.5rem;border-bottom:1px solid #e0e0e0;position:relative;}
+#box2>.menuRight>ul>li>img{height:8rem;width:8rem;position:absolute;left:0.5rem;top:0.5rem;}
+#box2>.menuRight>ul>li>.proLimes{width:60%;height:100%;float:right;}
+/*闪送超市子菜单样式*/
+#box2>.menuRight>ul>li>.proLimes>p{padding-left: 5%;width:100%;line-height:2rem;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+#box2>.menuRight>ul>li>.proLimes>p:nth-child(2)>span:nth-child(1){border:1px solid #ff4300;color:#ff4300;border-radius:15%;font-weight:550;}
+#box2>.menuRight>ul>li>.proLimes>p:nth-child(2)>span:nth-child(2){border:1px solid #ff4300;color:#fff;border-radius:15%;font-weight:550;background:#ff4300;}
+#box2>.menuRight>ul>li>.proLimes>p:last-child{width:70%;overflow: hidden;}
+#box2>.menuRight>ul>li>.proLimes>p:last-child>span:nth-child(1){color:#ff4300;}
+#box2 .menuRight>ul>li>.proLimes>p:last-child>span:nth-child(2){text-decoration:line-through;font-size:0.6rem;}
+#box2>.menuRight>ul>li b{display:block;position:absolute;bottom:0.5rem;right:1rem;border:1px solid #e0e0e0;border-radius:50%;width:2.6rem;height:2.6rem;color:#ff4300;background:rgba(255,255,255,.95);font-size:2.2rem;text-align:center;line-height:2.6rem;;}
+#box2>.menuRight>ul>li .addshop1{position:absolute;bottom:0.5rem;right:6.6rem;}
+#box2>.menuRight>ul>li .shopping{position:absolute;bottom:0.5rem;right:3.6rem;width:3rem;height:2.6rem;line-height:2.6rem;text-align:center;}
+
+/*闪送-分类*//*big*/
+#box2>.menuRight>.menuSort{position:fixed;top:4.6rem;height:4.2rem;width:75%;border-bottom:1px solid #e0e0e0;}
+#box2>.menuRight>.menuSort .big{height:100%;background:rgba(255,255,255,.95);display:flex;}
+#box2>.menuRight>.menuSort .big>li{width:50%;text-align:center;line-height:4rem;}
+#box2>.menuRight>.menuSort .big>li:last-child{border-left:1px solid #e0e0e0;}
+/*#box2>.menuRight>.menuSort .big>li i{font-size: 1.6rem;vertical-align: middle;display:inline-block;transition:all 0.7s;}*/
+
+/*闪送-分类-back*/
+#box2 .back ul.small{width:100%;background:rgba(255,255,255,.95);padding-bottom:1rem;}
+#box2 .back .small>li{display:inline-block;margin-left:.8rem;margin-top:0.8rem;border-radius:0.5rem;border:1px solid #e0e0e0;background:#fff;padding:0.4rem 0.8rem;}
+#box2 .back .small>li:first-child{border-color:#ffd600;background:#fff9d9}
+#box2 .back{width:75%;height:100%;position:fixed;top:8.8rem;right:0;background:rgba(0,0,0,.2);z-index:99;}

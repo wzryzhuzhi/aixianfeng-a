@@ -1,0 +1,19 @@
+
+#wrap{width: 100%;height: 100%;}
+#main{width: 100%;height: 90%;position:relative;}
+#main>div{width:100%;height:100%;position: absolute;}
+
+#tab{width: 100%;height:4.6rem;border-top: 1px solid lightgray;bottom:0;position: fixed;background:rgba(246,246,246,.95);z-index:99;}
+#tab>ul{width: 100%;height: 100%;display: flex;}
+#tab>ul>li{width: 25%;height: 100%;}
+#tab>ul>li>a{display:block;width:100%;height:100%;display: flex;justify-content: center;align-items: center;font-size:1.4rem;}
+
+/*一二页头部*/
+.dingwei{width:100%;height:4.6rem；display:table;display:table-cell;vertical-align: middle;}
+.head{height:55px;width:100%;background:#ffd600;font-size:1.4rem;position:fixed;top:0;z-index:2;}	
+.head>.headCenter{width:50%;line-height:55px;margin-left: 25%;float: left;}
+.headCenter>p{width:100%;text-align:center;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;font-weight:700;}
+.head>span{width:23%;height:100%;float:left;background:url(../img/home-icon/head_search.png)no-repeat right 0.8rem;background-size: auto 2rem;text-align:right;line-height:7rem;}
+
+
+

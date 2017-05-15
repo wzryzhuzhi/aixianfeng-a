@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="aixianfeng">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <script src="js/libs/angular.js"></script>
+    <script src="js/libs/angular-route.js"></script>
+    <script src="js/libs/angular-css.min.js"></script>
+    <script src="js/libs/me-lazyload.js"></script>
+    
+    <script src="js/libs/swiper.min.js"></script>
+    <script src="app.js"></script>
+    <script type="text/javascript" src="conpons/home/home.js"></script>
+    <script type="text/javascript" src="conpons/market/market.js"></script>
+    <script type="text/javascript" src="conpons/shopcar/shopcar.js"></script>
+    <script type="text/javascript" src="conpons/mine/mine.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="main" ng-view=""></div>
+		<div id="tab">
+			<ul>
+				<li><a href="#home">首页</a></li>
+				<li><a href="#market">闪送超市</a></li>
+				<li><a href="#shopcar">购物车</a></li>
+				<li><a href="#mine">我的</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
